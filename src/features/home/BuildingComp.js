@@ -4,6 +4,8 @@ import PropTypes from 'prop-types';
 import { bindActionCreators } from 'redux';
 import { connect } from 'react-redux';
 import * as actions from './redux/actions';
+import buildingIcon from '../../images/buildingIcon.png';
+import ruukkiLogo from '../../images/ruukkiLogo.png';
 
 export class BuildingComp extends PureComponent {
   static propTypes = {
@@ -18,18 +20,12 @@ export class BuildingComp extends PureComponent {
           <div className="heading-container">
             <div className="row w-row">
               <div className="column w-col w-col-9">
-                <img src="images/buildingIcon.png" width={49} className="image-2" />
+                <img src={buildingIcon} width={49} className="image-2" />
                 <h3 className="title lavender">Building</h3>
               </div>
               <div className="w-col w-col-3">
                 <div className="ruukkilogo">
-                  <img
-                    src="images/ruukkiLogo.png"
-                    width={140}
-                    srcSet="images/ruukkiLogo-p-500.png 500w, images/ruukkiLogo.png 550w"
-                    sizes="140px"
-                    className="image-3"
-                  />
+                  <img src={ruukkiLogo} width={140} sizes="140px" className="image-3" />
                 </div>
               </div>
             </div>
@@ -40,7 +36,9 @@ export class BuildingComp extends PureComponent {
                 <div className="first-line">
                   <div className="temp" onClick={this.props.actions.openSolar}>
                     <h5 className="heading-4 building-temp">Temperature</h5>
-                    <h4 className="heading-5 buildingtemp">{Math.round(this.props.home.temp.value) + this.props.home.temp.unit}</h4>
+                    <h4 className="heading-5 buildingtemp">
+                      {Math.round(this.props.home.temp.value) + this.props.home.temp.unit}
+                    </h4>
                   </div>
                   <div className="temp">
                     <h5 className="heading-4 building-temp">Wind</h5>

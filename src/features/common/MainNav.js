@@ -5,6 +5,11 @@ import { bindActionCreators } from 'redux';
 import { connect } from 'react-redux';
 import * as actions from './redux/actions';
 import { Route, NavLink, HashRouter, BrowserRouter, withRouter } from 'react-router-dom';
+import buildingIcon from '../../images/buildingIcon.png';
+import energyLoop from '../../images/energyLoop.png';
+import overview from '../../images/overview.png';
+import dTour from '../../images/3dTour.png';
+import compare from '../../images/compare.png';
 
 // import WebflowJS from '../../js/webflow';
 
@@ -24,46 +29,46 @@ export class MainNav extends Component {
             <div className="desktop-nav w-hidden-medium w-hidden-small w-hidden-tiny w-container">
               <div className="nav-link-wrapper">
                 <div className="menu-item-wrapper">
-                  <NavLink exact to="/building" ariaCurrent="page" activeClassName="active">
+                  <NavLink exact to="/ruukki/building" ariaCurrent="page" activeClassName="active">
                     <div className="menu-item">
                       <div className="menu-img lavender">
-                        <img src="images/buildingIcon.png" width={49} className="image" />
+                        <img src={buildingIcon} width={49} className="image" />
                       </div>
                       <div className="text-block">building</div>
                     </div>
                   </NavLink>
 
-                  <NavLink exact to="/loop" ariaCurrent="page" activeClassName="active">
+                  <NavLink exact to="/ruukki/loop" ariaCurrent="page" activeClassName="active">
                     <div className="menu-item">
                       <div className="menu-img teal">
-                        <img src="images/energyLoop.png" width={52} className="image" />
+                        <img src={energyLoop} width={52} className="image" />
                       </div>
                       <div className="text-block">Energy LOOP</div>
                     </div>
                   </NavLink>
 
-                  <NavLink exact to="/" ariaCurrent="page" activeClassName="active">
+                  <NavLink exact to="/ruukki/" ariaCurrent="page" activeClassName="active">
                     <div className="menu-item">
                       <div className="menu-img yellow">
-                        <img src="images/overview.png" width={48} className="image" />
+                        <img src={overview} width={48} className="image" />
                       </div>
                       <div className="text-block">Overview</div>
                     </div>
                   </NavLink>
 
-                  <NavLink exact to="/tour" ariaCurrent="page" activeClassName="active">
+                  <NavLink exact to="/ruukki/tour" ariaCurrent="page" activeClassName="active">
                     <div className="menu-item">
                       <div className="menu-img red">
-                        <img src="images/3dTour.png" width={51} className="image" />
+                        <img src={dTour} width={51} className="image" />
                       </div>
                       <div className="text-block">3d tour</div>
                     </div>
                   </NavLink>
 
-                  <NavLink exact to="/compare" ariaCurrent="page" activeClassName="active">
+                  <NavLink exact to="/ruukki/compare" ariaCurrent="page" activeClassName="active">
                     <div className="menu-item">
                       <div className="menu-img magenta">
-                        <img src="images/compare.png" width={49} className="image" />
+                        <img src={compare} width={49} className="image" />
                       </div>
                       <div className="text-block">compare</div>
                     </div>
@@ -87,7 +92,7 @@ export class MainNav extends Component {
                   <NavLink exact to="/building" ariaCurrent="page" activeClassName="active">
                     <div className="menu-item">
                       <div className="menu-img lavender">
-                        <img src="images/buildingIcon.png" width={49} className="image" />
+                        <img src={buildingIcon} width={49} className="image" />
                       </div>
                       <div className="text-block">building</div>
                     </div>
@@ -96,7 +101,7 @@ export class MainNav extends Component {
                   <NavLink exact to="/loop" ariaCurrent="page" activeClassName="active">
                     <div className="menu-item">
                       <div className="menu-img teal">
-                        <img src="images/energyLoop.png" width={52} className="image" />
+                        <img src={energyLoop} width={52} className="image" />
                       </div>
                       <div className="text-block">Energy LOOP</div>
                     </div>
@@ -105,7 +110,7 @@ export class MainNav extends Component {
                   <NavLink exact to="/" ariaCurrent="page" activeClassName="active">
                     <div className="menu-item">
                       <div className="menu-img yellow">
-                        <img src="images/overview.png" width={48} className="image" />
+                        <img src={overview} width={48} className="image" />
                       </div>
                       <div className="text-block">Overview</div>
                     </div>
@@ -114,7 +119,7 @@ export class MainNav extends Component {
                   <NavLink exact to="/tour" ariaCurrent="page" activeClassName="active">
                     <div className="menu-item">
                       <div className="menu-img red">
-                        <img src="images/3dTour.png" width={51} className="image" />
+                        <img src={dTour} width={51} className="image" />
                       </div>
                       <div className="text-block">3d tour</div>
                     </div>
@@ -123,7 +128,7 @@ export class MainNav extends Component {
                   <NavLink exact to="/compare" ariaCurrent="page" activeClassName="active">
                     <div className="menu-item">
                       <div className="menu-img magenta">
-                        <img src="images/compare.png" width={49} className="image" />
+                        <img src={compare} width={49} className="image" />
                       </div>
                       <div className="text-block">compare</div>
                     </div>

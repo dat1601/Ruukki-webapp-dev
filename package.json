@@ -85,5 +85,6 @@
     "react-draggable": "^3.0.5",
     "three": "^0.91.0",
     "three-orbit-controls": "^82.1.0"
-  }
+  },
+  "homepage": "/ruukki"
 }

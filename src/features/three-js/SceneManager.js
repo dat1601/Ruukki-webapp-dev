@@ -1,6 +1,7 @@
 import * as THREE from 'three';
 import OrbitControls from 'three-orbit-controls';
 
+
 export default function canvas(canvas) {
   const screenDimensions = {
     width: canvas.width,
@@ -57,7 +58,7 @@ export default function canvas(canvas) {
     dirLight.castShadow = true;
     dirLight.shadow.mapSize.width = 2048;
     dirLight.shadow.mapSize.height = 2048;
-    var d = 50;
+    const d = 50;
     dirLight.shadow.camera.left = -d;
     dirLight.shadow.camera.right = d;
     dirLight.shadow.camera.top = d;
@@ -71,7 +72,7 @@ export default function canvas(canvas) {
 
     loader.load(
       // resource URL
-      'models/ohutlevykeskus.js',
+      '../../models/ohutlevykeskus.js',
 
       // onLoad callback
       // Here the loaded data is assumed to be an object

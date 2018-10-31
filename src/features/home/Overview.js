@@ -4,6 +4,8 @@ import { bindActionCreators } from 'redux';
 import { connect } from 'react-redux';
 import * as actions from './redux/actions';
 import { withRouter } from 'react-router-dom';
+import overview from '../../images/overview.png';
+import ruukkiLogo from '../../images/ruukkiLogo.png';
 
 export class Overview extends Component {
   static propTypes = {
@@ -18,18 +20,12 @@ export class Overview extends Component {
           <div className="heading-container">
             <div className="row w-row">
               <div className="column w-col w-col-9">
-                <img src="images/overview.png" width={49} className="image-2" />
+                <img src={overview} width={49} className="image-2" />
                 <h3 className="title">Overview</h3>
               </div>
               <div className="w-col w-col-3">
                 <div className="ruukkilogo">
-                  <img
-                    src="images/ruukkiLogo.png"
-                    width={140}
-                    srcSet="images/ruukkiLogo-p-500.png 500w, images/ruukkiLogo.png 550w"
-                    sizes="(max-width: 479px) 67vw, 140px"
-                    className="image-3"
-                  />
+                  <img src={ruukkiLogo} width={140} sizes="(max-width: 479px) 67vw, 140px" className="image-3" />
                 </div>
               </div>
             </div>

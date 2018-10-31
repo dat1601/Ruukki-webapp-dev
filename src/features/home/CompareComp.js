@@ -1,4 +1,6 @@
 import React, { Component } from 'react';
+import compare from '../../images/compare.png';
+import ruukkiLogo from '../../images/ruukkiLogo.png';
 
 export default class CompareComp extends Component {
   static propTypes = {};
@@ -10,18 +12,12 @@ export default class CompareComp extends Component {
           <div className="heading-container">
             <div className="row w-row">
               <div className="column w-col w-col-9">
-                <img src="images/compare.png" width={49} className="image-2" />
+                <img src={compare} width={49} className="image-2" />
                 <h3 className="title magenta">compare</h3>
               </div>
               <div className="w-col w-col-3">
                 <div className="ruukkilogo">
-                  <img
-                    src="images/ruukkiLogo.png"
-                    width={140}
-                    srcSet="images/ruukkiLogo-p-500.png 500w, images/ruukkiLogo.png 550w"
-                    sizes="140px"
-                    className="image-3"
-                  />
+                  <img src={ruukkiLogo} width={140} sizes="140px" className="image-3" />
                 </div>
               </div>
             </div>

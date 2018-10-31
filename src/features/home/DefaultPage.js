@@ -3,11 +3,7 @@ import PropTypes from 'prop-types';
 import { bindActionCreators } from 'redux';
 import { connect } from 'react-redux';
 import * as actions from './redux/actions';
-import Overview from './Overview';
-import BuildingComp from './BuildingComp';
-import EnergyComp from './EnergyComp';
-import TourComp from './TourComp';
-import CompareComp from './CompareComp';
+
 import MainNav from '../common/MainNav';
 import ThreeContainer from '../common/ThreeContainer';
 
@@ -26,23 +22,15 @@ export class DefaultPage extends Component {
 
   render() {
     return (
-      <HashRouter>
-        <div className="home-default-page">
-          <div>
-            <div className="content">
-              <Switch>
-                <Route path="/building" component={BuildingComp} />
-                <Route path="/loop" component={EnergyComp} />
-                <Route path="/tour" component={TourComp} />
-                <Route path="/compare" component={CompareComp} />
-                <Route path="/" component={Overview} />
-              </Switch>
-            </div>
-            <MainNav />
-            <ThreeContainer />
-          </div>
+      <div className="home-default-page">
+        <div className="content">
+          <Switch>{this.props.children}</Switch>
         </div>
-      </HashRouter>
+        <div>
+          <MainNav />
+          <ThreeContainer />
+        </div>
+      </div>
     );
   }
 }

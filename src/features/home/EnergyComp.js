@@ -3,6 +3,12 @@ import PropTypes from 'prop-types';
 import { bindActionCreators } from 'redux';
 import { connect } from 'react-redux';
 import * as actions from './redux/actions';
+import energyLoop from '../../images/energyLoop.png';
+import ruukkiLogo from '../../images/ruukkiLogo.png';
+import energy from '../../images/energy.png';
+import energyPiles from '../../images/energyPiles.jpg';
+import solarCollector from '../../images/SolarCollector.jpg';
+import closeButton from '../../images/Orion_close.png';
 
 export class EnergyComp extends Component {
   static propTypes = {
@@ -17,32 +23,19 @@ export class EnergyComp extends Component {
           <div className="heading-container">
             <div className="row w-row">
               <div className="column w-col w-col-9">
-                <img src="images/energyLoop.png" width={49} className="image-2" />
+                <img src={energyLoop} width={49} className="image-2" />
                 <h3 className="title teal">Energy Loop</h3>
               </div>
               <div className="w-col w-col-3">
                 <div className="ruukkilogo">
-                  <img
-                    src="images/ruukkiLogo.png"
-                    width={140}
-                    srcSet="images/ruukkiLogo-p-500.png 500w, images/ruukkiLogo.png 550w"
-                    sizes="(max-width: 479px) 67vw, 140px"
-                    className="image-3"
-                  />
+                  <img src={ruukkiLogo} width={140} sizes="(max-width: 479px) 67vw, 140px" className="image-3" />
                 </div>
               </div>
             </div>
           </div>
           <div className="loop-container">
             <div className="loopwrapper">
-              <img
-                src="images/energy.png"
-                width={786}
-                height={1000}
-                srcSet="images/energy-p-500.png 500w, images/energy.png 1113w"
-                sizes="(max-width: 991px) 100vw, 78vw"
-                className="image-4"
-              />
+              <img src={energy} width={786} height={1000} sizes="(max-width: 991px) 100vw, 78vw" className="image-4" />
               <div className="place-holder state pump3">
                 <div className="text-block-2">On</div>
               </div>
@@ -73,7 +66,7 @@ export class EnergyComp extends Component {
                   <div className="energypiles">
                     <div className="info-card">
                       <div className="card-header">
-                        <img src="images/energyPiles.jpg" />
+                        <img src={energyPiles} />
                       </div>
                       <div className="card-body">
                         <h3 className="card-body-header">RUUKKI ENERGY PILES</h3>
@@ -95,7 +88,7 @@ export class EnergyComp extends Component {
                   <div className="heatwells">
                     <div className="info-card">
                       <div className="card-header">
-                        <img src="images/energyPiles.jpg" width={300} />
+                        <img src={energyPiles} width={300} />
                       </div>
                       <div className="card-body">
                         <h3 className="card-body-header">RUUKKI ENERGY PILES</h3>
@@ -117,7 +110,7 @@ export class EnergyComp extends Component {
                   <div className="solarpanel">
                     <div className="info-card">
                       <div className="card-header">
-                        <img src="images/solarCollector.jpg" width={221} className="image-7" />
+                        <img src={solarCollector} width={221} className="image-7" />
                       </div>
                       <div className="card-body">
                         <h3 className="card-body-header">RUUKKI® SOLAR PV PANEL</h3>
@@ -140,7 +133,7 @@ export class EnergyComp extends Component {
               <div className="card-close-button-wrapper">
                 <div className="button-holder">
                   <div className="close-button" onClick={this.props.actions.closeCard}>
-                    <img src="images/Orion_close.png" width={59} className="image-8" />
+                    <img src={closeButton} width={59} className="image-8" />
                   </div>
                 </div>
               </div>

@@ -1,20 +1,21 @@
 import {
   DefaultPage,
   Overview,
+  EnergyComp,
+  CompareComp,
+  TourComp,
+  BuildingComp,
 } from './';
 
 export default {
   path: '/',
   name: 'Home',
+  component: DefaultPage,
   childRoutes: [
-    { path: '',
-      name: 'Default page',
-      component: DefaultPage
-    },
-    { path: 'loop', name: 'Energy loop', component: DefaultPage },
-    { path: 'tour', name: 'Tour', component: DefaultPage },
-    { path: 'compare', name: 'Compare', component: DefaultPage },
-    { path: '', name: 'Overview', component: DefaultPage },
-    { path: 'building', name: 'Building', component: DefaultPage },
+    { path: 'ruukki/loop', name: 'Energy loop', component: EnergyComp },
+    { path: 'ruukki/tour', name: 'Tour', component: TourComp },
+    { path: 'ruukki/compare', name: 'Compare', component: CompareComp },
+    { path: 'ruukki', name: 'Overview', component: Overview, isIndex: true },
+    { path: 'ruukki/building', name: 'Building', component: BuildingComp },
   ],
 };
