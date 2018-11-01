@@ -72,7 +72,7 @@ export default function canvas(canvas) {
 
     loader.load(
       // resource URL
-      '/models/ohutlevykeskus.json',
+      '/static/models/ohutlevykeskus.json',
 
       // onLoad callback
       // Here the loaded data is assumed to be an object
