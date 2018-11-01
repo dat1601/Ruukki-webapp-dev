@@ -89,7 +89,7 @@ export class MainNav extends Component {
               <div data-w-id="0845fd3e-21ab-8cd6-c9f2-e08c01a2aa46" className="nav-link-wrapper">
                 
                 <div className="menu-item-wrapper">
-                  <NavLink exact to="/building" ariaCurrent="page" activeClassName="active">
+                  <NavLink exact to="/ruukki/building" ariaCurrent="page" activeClassName="active">
                     <div className="menu-item">
                       <div className="menu-img lavender">
                         <img src={buildingIcon} width={49} className="image" />
@@ -98,7 +98,7 @@ export class MainNav extends Component {
                     </div>
                   </NavLink>
 
-                  <NavLink exact to="/loop" ariaCurrent="page" activeClassName="active">
+                  <NavLink exact to="/ruukki/loop" ariaCurrent="page" activeClassName="active">
                     <div className="menu-item">
                       <div className="menu-img teal">
                         <img src={energyLoop} width={52} className="image" />
@@ -107,7 +107,7 @@ export class MainNav extends Component {
                     </div>
                   </NavLink>
 
-                  <NavLink exact to="/" ariaCurrent="page" activeClassName="active">
+                  <NavLink exact to="/ruukki" ariaCurrent="page" activeClassName="active">
                     <div className="menu-item">
                       <div className="menu-img yellow">
                         <img src={overview} width={48} className="image" />
@@ -116,7 +116,7 @@ export class MainNav extends Component {
                     </div>
                   </NavLink>
 
-                  <NavLink exact to="/tour" ariaCurrent="page" activeClassName="active">
+                  <NavLink exact to="/ruukki/tour" ariaCurrent="page" activeClassName="active">
                     <div className="menu-item">
                       <div className="menu-img red">
                         <img src={dTour} width={51} className="image" />
@@ -125,7 +125,7 @@ export class MainNav extends Component {
                     </div>
                   </NavLink>
 
-                  <NavLink exact to="/compare" ariaCurrent="page" activeClassName="active">
+                  <NavLink exact to="/ruukki/compare" ariaCurrent="page" activeClassName="active">
                     <div className="menu-item">
                       <div className="menu-img magenta">
                         <img src={compare} width={49} className="image" />

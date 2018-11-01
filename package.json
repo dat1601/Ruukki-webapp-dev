@@ -16,7 +16,8 @@
   "scripts": {
     "start": "node ./tools/server.js",
     "build": "node ./tools/build.js",
-    "test": "node ./tools/run_test.js"
+    "test": "node ./tools/run_test.js",
+    "serve": "live-server --port=10004 build/"
   },
   "devDependencies": {
     "argparse": "^1.0.7",
@@ -47,15 +48,15 @@
     "file-loader": "^1.1.6",
     "history": "^4.7.2",
     "jsdom": "^11.5.1",
-    "less": "^2.7.3",
+    "less": "^3.8.1",
     "less-loader": "^4.0.5",
     "lodash": "^4.17.4",
     "lodash-webpack-plugin": "^0.11.4",
     "mocha": "^4.1.0",
     "mocha-webpack": "^1.0.1",
     "nock": "^9.1.6",
-    "npm-run": "^4.1.2",
-    "nyc": "^11.4.1",
+    "npm-run": "^5.0.1",
+    "nyc": "^13.1.0",
     "prop-types": "^15.5.10",
     "react": "^16.2.0",
     "react-dom": "^16.2.0",
@@ -67,9 +68,9 @@
     "redux-logger": "^3.0.6",
     "redux-mock-store": "^1.4.0",
     "redux-thunk": "^2.2.0",
-    "rekit-core": "^2.1.1",
-    "rekit-studio": "^2.2.0",
-    "request": "^2.83.0",
+    "rekit-core": "^2.3.0",
+    "rekit-studio": "^2.3.0",
+    "request": "^2.88.0",
     "shelljs": "^0.8.0",
     "sinon": "^4.1.5",
     "style-loader": "^0.19.1",
@@ -82,6 +83,7 @@
   },
   "dependencies": {
     "babel-preset-stage-2": "^6.24.1",
+    "live-server": "^1.2.0",
     "react-draggable": "^3.0.5",
     "three": "^0.91.0",
     "three-orbit-controls": "^82.1.0"
